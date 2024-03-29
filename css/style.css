@@ -1,0 +1,83 @@
+
+p, h1, a, li {
+    color: black;
+}
+p, li, a, td {
+    font-family: 'Ubuntu', sans-serif;
+}
+h1 {
+    font-family: 'Rubik Scribble', sans-serif;
+    text-align: center;
+    color: sienna;
+}
+h2 {
+    font-family: 'Rubik Scribble', sans-serif;
+    color: green
+}
+a {
+    display: inline;
+}
+.page1 {
+    background-color: thistle;
+}
+.page2 {
+    background-color: pink;
+}
+.page3 {
+    background-color:palegoldenrod;
+}
+.page4 {
+    background-color: powderblue;
+}
+.page5 {
+    background-color: lightgreen;
+}
+.page6 {
+    background-color: beige;
+}
+img {
+    width: 300px;
+    
+    margin: auto;
+    border: 5px solid chocolate;
+
+}
+li:hover {
+    color:brown;
+}
+#table {
+    border: 1px solid black;
+    
+    margin:auto;
+    border-collapse:collapse;
+  }
+td, th{
+    border: 2px
+    solid black;
+    padding: 2em;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+#resume {
+    font-family: 'Rubik Scribble', sans-serif;
+    font-size:xx-large;
+    color: sienna;
+    
+}
+#hello {
+    line-height: 2;
+    border: 1px dashed green;
+    margin: 10px;
+    padding: 11px;
+    text-align: center;
+}
+#ph1, #ph2, #ph3, #ph4 {
+    width: 470px;
+    margin: auto;
+    border: 5px solid rgb(160, 216, 228);
+}
+#me {
+    display: block;
+    margin: auto;
+    border: 5px solid rgb(160, 216, 228);
+}
