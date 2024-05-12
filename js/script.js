@@ -1,0 +1,15 @@
+const handlernagechange = (offset)=>{
+    const activeSlide = document. querySelector(" [data-active]")
+    const slides = [...document-querySelectorAll(".slide" )]
+    const currentIndex = slides.index0f(activeSlide)
+    let newIndex = currentIndex + offset;
+    if(newindex < 0) newIndex = slides.length - 1
+    if (newIndex >= slides.length) newIndex = 0 
+    console.log(slides)
+    slides[newIndex].dataset.active = true;
+    delete activeSlide.dataset.active
+
+}
+
+const onNext = ()=> handleImageChange(1)
+const onPrev = ()=> handleImageChange(-1)

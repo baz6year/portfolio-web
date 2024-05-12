@@ -1,4 +1,48 @@
 
+html, body{
+    height: 100%;
+}
+body {
+    text-align: center;
+    background: linear-gradient(45deg, #ee9ca7, #C779D0,#4BC0C8);
+    background-size: 200% 200%;
+    animation: gradient 5s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+header{
+    background: lightblue;
+    height: 100px;
+    width: 100%;
+}
+
+header .container{
+    width: 95%;
+    justify-content: space-between;
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+header h1 {
+    color: sienna;
+}
+nav ul li a{
+    color: sienna;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline;
+}
+
 p, h1, a, li {
     color: black;
 }
@@ -6,48 +50,28 @@ p, li, a, td {
     font-family: 'Ubuntu', sans-serif;
 }
 h1 {
-    font-family: 'Rubik Scribble', sans-serif;
+    font-family: "Kanit", sans-serif;
     text-align: center;
     color: sienna;
 }
 h2 {
-    font-family: 'Rubik Scribble', sans-serif;
+    font-family: "Kanit", sans-serif;
     color: green
 }
 a {
     display: inline;
 }
-.page1 {
-    background-color: thistle;
-}
-.page2 {
-    background-color: pink;
-}
-.page3 {
-    background-color:palegoldenrod;
-}
-.page4 {
-    background-color: powderblue;
-}
-.page5 {
-    background-color: lightgreen;
-}
-.page6 {
-    background-color: beige;
-}
 img {
     width: 300px;
-    
     margin: auto;
     border: 5px solid chocolate;
 
 }
 li:hover {
-    color:brown;
+    color:white;
 }
 #table {
     border: 1px solid black;
-    
     margin:auto;
     border-collapse:collapse;
   }
@@ -59,7 +83,7 @@ td, th{
 
 }
 #resume {
-    font-family: 'Rubik Scribble', sans-serif;
+    font-family: "Kanit", sans-serif;
     font-size:xx-large;
     color: sienna;
     
@@ -75,9 +99,30 @@ td, th{
     width: 470px;
     margin: auto;
     border: 5px solid rgb(160, 216, 228);
+    display: flex;
+    justify-content: space-around;
 }
 #me {
     display: block;
     margin: auto;
     border: 5px solid rgb(160, 216, 228);
+}
+ul {
+    margin: 0; 
+    padding: 4px;
+   }
+ul li {
+    display: inline; 
+    margin-right: 5px;  
+    padding: 3px;
+    text-align: center; 
+   }
+
+.contact img {
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+.contact {
+    display: grid;
 }

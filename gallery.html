@@ -12,29 +12,38 @@
         <link rel="stylesheet" href="css/style.css"> 
     </head> 
     <body> 
-        <h2>Navigation</h2>
-        <ul> 
-            <li> 
-                <a href="./index.html">Home</a> 
-            </li>
-            <li> 
-                <a href="./about.html">About me</a> 
-            </li> 
-            <li> 
-                <a href="./resume.html">Resume</a> 
-            </li>  
-            <li> 
-                <a href="./works.html">Works</a> 
-            </li>
-            <li> 
-                <a href="./contact.html">Contact</a> 
-            </li>
-        </ul>
+       
+        <header>
+            <div class="container">
+                <h1>Portfolio</h1>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About me</a> </li>
+                        <li><a href="./resume.html">Resume</a></li>
+                        <li><a href="./works.html">Works</a> </a></li>
+                        <li><a href="./contact.html">Contact</a></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         <h1 id="photo">Gallery</h1>
         <h2>Photos of me</h2>
-        <img src="img\me1.jpg" alt="my photo" />
-        <img src="img\me2.jpg" alt="my photo" />
-        <img src="img\me3.jpeg" alt="my photo" />
+        <div class="carousel">
+            <button class="carousel-button next" onclick="onNext()">&#187;</button>
+            <button class="carousel-button prev" onclick="onPrev()">&#171;</button>
+            <ul class="slides">
+                <li class="slide" data-active>
+                    <img src="img\me1.jpg" alt="my photo" />
+                </li class="slide">
+                <li>
+                    <img src="img\me2.jpg" alt="my photo" />
+                </li class="slide">
+                <li>
+                    <img src="img\me3.jpeg" alt="my photo" />
+                </li>
+            </ul>
+        </div>    
         <h2>Aesthatic photos</h2>
         <img src="img\photo1.jpeg" alt="my photo" />
         <img src="img\photo2.jpeg" alt="my photo" />
@@ -42,5 +51,5 @@
         
         
     </body> 
-    <script src="js/script.js" ></script> 
+    <script src="index.js" defer></script> 
 </html>
